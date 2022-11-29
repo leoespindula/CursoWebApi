@@ -10,10 +10,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string sqlServerConnection = builder.Configuration.GetConnectionString("DefaultConnection");
+string sqlServerConnection = builder.Configuration.GetConnectionString("SqlServer");
 builder.Services.AddDbContext<AppDbContext>(options=>
-                    options.UseSqlServer(sqlServerConnection,
-                    ServerVersion.AutoDetect(sqlServerConnection)));
+                    options.UseSqlServer("sqlServerConnection"));
 
 var app = builder.Build();
 
@@ -23,7 +22,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+ 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
