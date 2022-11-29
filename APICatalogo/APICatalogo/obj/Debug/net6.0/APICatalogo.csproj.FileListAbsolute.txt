@@ -1,0 +1,7 @@
+D:\Curso\CursoWebApi\APICatalogo\APICatalogo\obj\Debug\net6.0\APICatalogo.csproj.AssemblyReference.cache
+D:\Curso\CursoWebApi\APICatalogo\APICatalogo\obj\Debug\net6.0\APICatalogo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Curso\CursoWebApi\APICatalogo\APICatalogo\obj\Debug\net6.0\APICatalogo.AssemblyInfoInputs.cache
+D:\Curso\CursoWebApi\APICatalogo\APICatalogo\obj\Debug\net6.0\APICatalogo.AssemblyInfo.cs
+D:\Curso\CursoWebApi\APICatalogo\APICatalogo\obj\Debug\net6.0\APICatalogo.csproj.CoreCompileInputs.cache
+D:\Curso\CursoWebApi\APICatalogo\APICatalogo\obj\Debug\net6.0\APICatalogo.MvcApplicationPartsAssemblyInfo.cs
+D:\Curso\CursoWebApi\APICatalogo\APICatalogo\obj\Debug\net6.0\APICatalogo.MvcApplicationPartsAssemblyInfo.cache
