@@ -1,4 +1,6 @@
-using APICatalogo.Context;
+using APICatalogo.Data;
+using APICatalogo.Repositorios;
+using APICatalogo.Repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,9 +12,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string sqlServerConnection = builder.Configuration.GetConnectionString("SqlServer");
-builder.Services.AddDbContext<AppDbContext>(options=>
-                    options.UseSqlServer("sqlServerConnection"));
+builder.Services.AddEntityFrameworkSqlServer()
+    .AddDbContext<AppDbContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"))
+    );
+
+builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 
 var app = builder.Build();
 
